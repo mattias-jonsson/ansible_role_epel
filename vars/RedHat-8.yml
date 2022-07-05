@@ -1,0 +1,4 @@
+---
+
+ansible_role_epel_package: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+ansible_role_epel_fingerprint: 94E2 79EB 8D8F 25B2 1810 ADF1 21EA 45AB 2F86 D6A1

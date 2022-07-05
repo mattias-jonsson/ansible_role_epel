@@ -1,0 +1,16 @@
+---
+
+collections:
+  - name: community.general.rhsm_repository
+
+galaxy_info:
+  author: Mattias Jonsson
+  description: An Ansible role that installs EPEL repositories on supported Red Hat Enterprise Linux-based distributions.
+  min_ansible_version: 2.9.27
+  role_name: ansible_role_epel
+  license: MIT
+  platforms:
+  - name: EL
+    versions:
+    - "7"
+    - "8"
