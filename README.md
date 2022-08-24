@@ -1,7 +1,7 @@
 Ansible Role: ansible_role_epel
 =========
 
-An Ansible role that installs EPEL repositories on supported Red Hat Enterprise Linux-based distributions.
+Installs EPEL repositories on the following distributions:
 
 <ul>
 <li>CentOS 7/8
@@ -23,7 +23,7 @@ This role has no user configurable variables.
 Dependencies
 ------------
 
-This role has no external dependencies.
+None.
 
 Example Playbook
 ----------------
