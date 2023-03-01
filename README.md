@@ -11,8 +11,10 @@ Installs EPEL repositories on the following distributions:
 Requirements
 ------------
 
-This role needs the following collections:
-* community.general.rhsm_repository  
+This role is dependent on the following Ansible collections:
+
+`community.general.rhsm_repository`
+
 
 Role Variables
 --------------
