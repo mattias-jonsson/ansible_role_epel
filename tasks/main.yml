@@ -1,11 +1,13 @@
 ---
 
-- name: only run on supported platforms
-  block:
-  - name: Include variables specific for the distribution.
-    include_vars: "{{ item }}"
-    with_items:
-      - "{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
-
-  - import_tasks: install.yml
+- name: Only run on supported platforms.
   when: ansible_os_family == "RedHat" and ansible_distribution != "Fedora"
+  block:
+    - name: Include variables specific for the distribution.
+      ansible.builtin.include_vars: "{{ item }}"
+      with_items:
+        - "{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
+
+    - name: Import install tasks.
+      ansible.builtin.import_tasks:
+        file: install.yml
